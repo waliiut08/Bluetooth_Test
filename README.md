@@ -15,18 +15,18 @@ Technologies and Tools Used:
 ---------------------------------------------------------------------------------------------------------------------------------  
 Accomplished Tasks:
 1) Bluetooth messaging:
-        - A discoverable switch-button is used to switch on/off visibility by other bluetooth devices.
-        - Find Bluetooth Devices.
-        - Create Pairing.
-        - Create Network Connection with paired device to send and receive data. Socket programming is applied for these.
-        - Multithreading technique is used.
-        - Can send and receive text message with the connected device.
-        - At the startup the app automatically turns on the Bluetooth and start scaning to find Bluetooth Devices.
-        - At the shut down the app automatically turns off Bluetooth and other Bluetooth related acitivities.
+  - A discoverable switch-button is used to switch on/off visibility by other bluetooth devices.
+  - Find Bluetooth Devices.
+  - Create Pairing.
+  - Create Network Connection with paired device to send and receive data. Socket programming is applied for these.
+  - Multithreading technique is used.
+  - Can send and receive text message with the connected device.
+  - At the startup the app automatically turns on the Bluetooth and start scaning to find Bluetooth Devices.
+  - At the shut down the app automatically turns off Bluetooth and other Bluetooth related acitivities.
         
         
 2) Topology Establishment:
-        - Can start scanning (search for other bluetooth devices) autonomously periodically.
-        - A switch-button is added to switch on/off the auto-scan process.
+  - Can start scanning (search for other bluetooth devices) autonomously periodically.
+  - A switch-button is added to switch on/off the auto-scan process.
         
         
