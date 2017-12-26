@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.muhammadwaliullahbhu.bluetooth_test.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="491dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="10dp">
+
+        <Switch
+            android:id="@+id/swBtOnOffID"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignLeft="@+id/tvAvailableDevicesID"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/tvAvailableDevicesID"
+            android:text="On/Off"
+            android:textSize="18sp" />
+
+        <Switch
+            android:id="@+id/swDiscoverableID"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignLeft="@+id/swBtOnOffID"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignStart="@+id/swBtOnOffID"
+            android:layout_below="@+id/swBtOnOffID"
+            android:layout_marginTop="14dp"
+            android:text="Discoverable"
+            android:textSize="18sp" />
+
+        <Switch
+            android:id="@+id/swAutoDiscoveryID"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignLeft="@+id/swDiscoverableID"
+            android:layout_alignStart="@+id/swDiscoverableID"
+            android:layout_below="@+id/swDiscoverableID"
+            android:text="Auto Discovery"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/tvAvailableDevicesID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ListViewDevicesID"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="19dp"
+            android:layout_marginStart="19dp"
+            android:text="Available Devices"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="14sp" />
+
+
+        <ProgressBar
+            android:id="@+id/progressBarDiscoverDeviceID"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/tvAvailableDevicesID"
+            android:layout_toEndOf="@+id/btnMessageSendID"
+            android:layout_toRightOf="@+id/btnMessageSendID"
+            />
+
+
+        <ListView
+            android:id="@+id/ListViewDevicesID"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_above="@+id/tvMessageTitleID"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="26dp" />
+
+        <TextView
+            android:id="@+id/tvMessageTitleID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnMessageSendID"
+            android:layout_alignLeft="@+id/tvAvailableDevicesID"
+            android:layout_alignStart="@+id/tvAvailableDevicesID"
+            android:layout_marginBottom="25dp"
+            android:text="Message : "
+            android:textColor="@android:color/holo_blue_dark" />
+
+        <TextView
+            android:id="@+id/tvMessageID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvMessageTitleID"
+            android:layout_alignBottom="@+id/tvMessageTitleID"
+            android:layout_toEndOf="@+id/tvMessageTitleID"
+            android:layout_toRightOf="@+id/tvMessageTitleID" />
+
+
+
+        <EditText
+            android:id="@+id/etMessageSendID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvMessageTitleID"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/tvMessageTitleID"
+            android:layout_marginBottom="33dp"
+            android:ems="10"
+            android:hint="Write your message"
+            android:inputType="textShortMessage|textLongMessage" />
+
+        <Button
+            android:id="@+id/btnMessageSendID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/etMessageSendID"
+            android:layout_toEndOf="@+id/etMessageSendID"
+            android:layout_toRightOf="@+id/etMessageSendID"
+            android:onClick="btnSend_onClick"
+            android:text="Send"
+            />
+
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
